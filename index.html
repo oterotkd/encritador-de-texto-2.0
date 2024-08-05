@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Index</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img  class="a"src="Logo.png" alt="">
+            <h1>Encriptador y Desencriptador de TEXTO</h1>          
+        </nav>
+    </header>
+    <div class="divider"></div>
+    <main>
+        <section>
+            <textarea class="text-area" cols="50" rows="10"placeholder="Escribe el mensaje a encriptar o desencriptar"></textarea>
+           <p>Solo Letras Minusculas y sin Acento</p>
+            <div class="botones">
+                <button class="btn-encriptar" onclick=" btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea class="mensaje"  cols="50" rows="10"></textarea>
+            <div>
+                <button class="copiar" onclick="btnCopiar()">Copiar el Texto</button>               
+            </div>
+        </section>
+
+    </main>
+
+    <div class="divider">
+
+    </div>
+    <footer>
+        <img src="Logo@2x.png" alt="Logo">
+        <div class="content">
+            <h3><b>Otero García Ariel José</b></h3>
+            <b>oterogarciaarieljose@gmail.com</b>
+            <div class="icons">
+                <a href="https://github.com/tu-perfil" target="_blank" class="icon">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="mailto:oterogarciaarieljose@gmail..com" class="icon">
+                    <i class='bx bx-envelope'></i>
+                </a>
+                <a href="https://wa.me/tu-numero-de-whatsapp" target="_blank" class="icon">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

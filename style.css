@@ -1,0 +1,227 @@
+
+/* Estilos generales */
+* {
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total del elemento */
+}
+
+body {
+    margin: 0; /* Elimina el margen por defecto del body */
+    font-family: 'Montserrat', sans-serif; /*  la fuente correcta */
+    color:  rgb(2, 3, 68); /* Color de texto general */
+}
+
+/* Encabezado y navegación */
+header {
+    background-color: aliceblue; /* Color de fondo del encabezado */
+    padding: 20px; /* Espaciado interno del encabezado */
+}
+
+nav {
+    display: flex; /* Usa flexbox para la disposición de los elementos dentro de la navegación */
+    align-items: center; /* Alinea verticalmente los elementos al centro */
+    justify-content: center; /* Distribuye el espacio entre los elementos */
+}
+
+nav img {
+    max-width: 200px; /* Limita el tamaño máximo del logo */
+    height: auto; /* Mantiene la proporción del logo */
+}
+
+h1{
+    font-size: 5vw; /* Usa unidades relativas (vw - viewport width) para que el tamaño de la fuente se ajuste según el tamaño de la pantalla */
+    color: rgb(2, 3, 68); /* Color del título */
+    text-align: center; /* Centra el texto del título */
+    margin: 0; /* Elimina el margen por defecto del título */
+}
+
+/* Divisor */
+.divider {
+    border: 3px solid rgb(2, 3, 68); /* Color y grosor del borde del divisor */
+    margin: 10px; /* Espaciado alrededor del divisor */
+}
+
+/* Área principal */
+main {
+    padding: 10px; /* Espaciado interno del área principal */
+    display: flex; /* Usa flexbox para la disposición de los elementos dentro del área principal */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Alinea los elementos al centro horizontalmente */
+    margin: 0 auto; /* Centra el área principal en la página */
+}
+
+/* Estilos de los textarea */
+textarea {
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    max-width: 600px; /* Limita el ancho máximo del textarea */
+    margin-top: 20px; /* Espaciado superior del textarea */
+    border: none; /* Elimina el borde por defecto del textarea */
+    text-transform: lowercase; /* Transforma el texto a minúsculas */
+    background-color: rgb(61, 62, 63); /* Color de fondo del textarea */
+    color: rgba(250, 241, 241, 0.9); /* Color del texto con opacidad */
+    padding: 10px; /* Espaciado interno del textarea */
+    border-radius: 5px; /* Bordes redondeados del textarea */
+    background-image: url("Alura-3.jpg");    
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el área*/ 
+   
+
+}
+
+::placeholder {
+    color: azure; /* Color del texto del placeholder */
+}
+
+.btn-encriptar,
+.btn-desencriptar,
+.copiar {
+    padding: 10px; /* Espaciado interno de los botones */
+    border-radius: 5px; /* Bordes redondeados de los botones */
+    border: none; /* Elimina el borde por defecto de los botones */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima */
+    margin: 10px; /* Espaciado alrededor de los botones */
+}
+
+/* Botón Encriptar */
+.btn-encriptar {
+    background-color: rgb(2, 3, 68); /* Color de fondo del botón de encriptar */
+    color: white; /* Color del texto del botón de encriptar */
+}
+
+.btn-encriptar:hover {
+    background-color: white; /* Color de fondo cuando se pasa el mouse por encima */
+    color: rgb(2, 3, 68); /* Color del texto cuando se pasa el mouse por encima */
+    border: 2px solid rgb(2, 3, 68); /* Borde del botón cuando se pasa el mouse por encima */
+}
+
+/* Botón Desencriptar */
+.btn-desencriptar {
+    background-color: white; /* Color de fondo del botón de desencriptar */
+    color: rgb(2, 3, 68); /* Color del texto del botón de desencriptar */
+    border: 2px solid rgb(2, 3, 68); /* Borde del botón de desencriptar */
+}
+
+.btn-desencriptar:hover {
+    background-color: rgb(2, 3, 68); /* Color de fondo cuando se pasa el mouse por encima */
+    color: white; /* Color del texto cuando se pasa el mouse por encima */
+    border: 2px solid white; /* Borde del botón cuando se pasa el mouse por encima */
+}
+
+/* Botón Copiar */
+.copiar {
+    border: 1px solid rgb(2, 3, 68); /* Borde del botón copiar */
+    color: rgb(2, 3, 68); /* Color del texto del botón copiar */
+    background-color: rgb(113, 113, 114);
+}
+.copiar:hover {
+    border: 2px solid  rgb(113, 113, 114); /* Borde del botón copiar */
+    color:  rgb(113, 113, 114); /* Color del texto del botón copiar */
+    background-color:rgb(2, 3, 68);
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content p {
+    margin: 0 0 10px 0; /* Ajusta el margen inferior del texto */
+}
+
+/* Estilos del pie de página */
+footer {
+    display: flex; /* Usa flexbox para la disposición de los elementos dentro del pie de página */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    align-items: center; /* Alinea los elementos al centro horizontalmente */
+    background-color: rgb(12, 13, 49); /* Color de fondo del pie de página */
+    color: white; /* Color del texto del pie de página */
+    padding: 20px; /* Espaciado interno del pie de página */
+}
+
+/* Imagen en el pie de página */
+footer img {
+    max-width: 100px; /* Limita el tamaño máximo de la imagen */
+    border-radius: 20%; /* Redondea la imagen para que tenga forma circular */
+    height: auto;
+    padding: 10px;
+    background-color: white;
+
+}
+
+/* Contenido en el pie de página */
+.icons {
+    display: flex; /* Usa flexbox para la disposición de los íconos */
+    gap: 15px; /* Espacio entre los íconos */
+    font-size: xx-large;
+}
+i {
+    color: #ddd; /* Color cuando el ícono es hover */    
+}
+i:hover{
+    color:rgb(12, 13, 49);
+    background-color:white;
+  
+}
+/* Media Queries para Responsividad */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 4vw; /* Reduce el tamaño de la fuente del título para pantallas pequeñas */
+    }
+    
+    textarea {
+        font-size: 14px; /* Reduce el tamaño de la fuente del textarea */
+        margin-top: 10px; /* Reduce el espaciado superior del textarea */
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar,
+    .copiar {
+        font-size: 14px; /* Reduce el tamaño de la fuente de los botones */
+        padding: 8px; /* Reduce el espaciado interno de los botones */
+    }
+
+    footer img {
+        max-width: 100px; /* Reduce el tamaño máximo de la imagen del pie de página */
+    }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+        font-size: 4vw; /* Ajusta el tamaño de la fuente del título para pantallas medianas */
+    }
+
+    textarea {
+        font-size: 16px; /* Ajusta el tamaño de la fuente del textarea */
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar,
+    .copiar {
+        font-size: 16px; /* Ajusta el tamaño de la fuente de los botones */
+        padding: 10px; /* Ajusta el espaciado interno de los botones */
+    }
+
+    footer img {
+        max-width: 120px; /* Ajusta el tamaño máximo de la imagen del pie de página */
+    }
+}
+
+/* Para pantallas grandes (escritorios) */
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 3vw; /* Mantiene un tamaño de fuente mayor para pantallas grandes */
+    }
+
+    textarea {
+        font-size: 25px; /* Aumenta el tamaño de la fuente del textarea */
+    }
+
+    .btn-encriptar,
+    .btn-desencriptar,
+    .copiar {
+        font-size: 18px; /* Aumenta el tamaño de la fuente de los botones */
+        padding: 12px; /* Aumenta el espaciado interno de los botones */
+    }
+}
